@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(36, 47, 62);
+  padding: 1rem 0;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+  background-color: rgb(36, 47, 62);
+}
+
+#check {
+  display: none;
+}
+i {
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+header .logo {
+  flex: 1;
+  color: white;
+  margin-left: 50px;
+}
+header .searchb {
+  flex: 1;
+  position: relative;
+}
+
+.searchb input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  outline: none;
+  background: #f2f2f2;
+  border-radius: 30px;
+  color: gray;
+  font-size: 1rem;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 40px;
+}
+
+.searchb button {
+  width: 40px;
+  height: 40px;
+  border-radius: 2rem;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scale(1);
+  background: rgb(230, 28, 60);
+}
+
+header ul {
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-weight: 570;
+  text-transform: uppercase;
+  padding: 10px 1rem;
+}
+
+header ul li a:hover {
+  color: rgb(26, 71, 134);
+}
+
+header .menu {
+  font-size: 2.5em;
+  display: none;
+}
+
+@media (max-width: 62.5rem) {
+  .searchb button {
+    position: absolute;
+  }
+  header ul {
+    position: fixed;
+    top: 6.25rem;
+    right: -100%;
+    background: rgba(0, 0, 0, 5);
+    height: calc(100vh - 6.25rem);
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    transition: right 0.5s linear;
+  }
+  header .menu {
+    display: block;
+    width: 6.25rem;
+    text-align: center;
+  }
+  #check:checked ~ ul {
+    right: 0;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  header .logo {
+    font-size: 10px;
+    margin-left: 8px;
+  }
+  header ul {
+    width: 100%;
+  }
+}
+
+/* makes images easier to work with and also helps resposive layout */
+img,
+picture {
+  max-width: 100%;
+}
+.products-grid {
+  display: grid;
+  gap: 0.45rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.container {
+  max-width: 100rem;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+.cardtwo {
+  display: grid;
+}
+
+.cardtwo > * {
+  /* select childs*/
+  grid-column: 1 / 2;
+  grid-row: 1 /2;
+}
+.card {
+  aspect-ratio: 1 /1.5;
+}
+
+.card-content {
+  background: white;
+  align-self: end;
+  margin: 0.5rem 0.5rem 2rem; /*creat space */
+  padding: 0.5rem;
+  box-shadow: 0 0.25rem 1rem rgb(255, 255, 255);
+}
+
+.product-title {
+  font-size: 1.25rem;
+  line-height: 0.5;
+}
+
+.card-image {
+  width: 100%; /*need width when using aspect ratio. height matches width, heightb wont be 100%*/
+  aspect-ratio: 1/1; /* width and height should be the same */
+  object-fit: cover;
+}
