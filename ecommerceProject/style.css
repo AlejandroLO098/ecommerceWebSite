@@ -83,7 +83,7 @@ header .searchb {
   outline: none;
   background: #f2f2f2;
   border-radius: 30px;
-  color: gray;
+  color: black;
   font-size: 1rem;
   text-align: center;
   padding-left: 5px;
@@ -282,15 +282,15 @@ a {
   padding-top: 2.5rem;
 }
 
-.card--pink {
+.card--one {
   background-color: rgb(37, 47, 62);
 }
 
-.card--blue {
+.card--two {
   background-color: #abdbe9;
 }
 
-.card--green {
+.card--three {
   background-color: rgb(154, 1, 1);
 }
 

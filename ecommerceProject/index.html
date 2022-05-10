@@ -13,12 +13,14 @@
   </head>
   <body>
     <header>
-      <input type="checkbox" name="" id="check" />
+      <input type="checkbox" id="check" />
       <div class="logo"><h1>Alejandro</h1></div>
       <div class="searchb">
-        <form action="">
+        <form action="#">
           <input type="text" name="search" id="srch" placeholder="Search" />
-          <button type="submit"><i class="fa fa-search"></i></button>
+          <button type="submit" aria-label="search">
+            <i class="fa fa-search"></i>
+          </button>
         </form>
       </div>
       <ul>
@@ -39,11 +41,11 @@
         </label>
       </div>
     </header>
-    <section class="home-hero">
+    <div class="home-hero">
       <div class="container">
         <button class="button">Shop Now</button>
       </div>
-    </section>
+    </div>
     <section class="banner">
       <div class="banner-image-wrapper">
         <img
@@ -57,12 +59,14 @@
         <p class="banner-desc">
           Browse vintage and newer Nintendo products for reasonable prices.
         </p>
-        <a href="https://partakefoods.com/" class="banner-button"> Browse </a>
+        <a href="https://partakefoods.com/" class="banner-button">
+          <h2>Browse</h2></a
+        >
       </div>
     </section>
 
     <section class="cards">
-      <div class="card card--pink">
+      <div class="card card--one">
         <h2 class="card__title">Consoles</h2>
         <a href="https://partakefoods.com/" class="card__button"> SHOP NOW </a>
 
@@ -71,7 +75,7 @@
         </a>
       </div>
 
-      <div class="card card--blue">
+      <div class="card card--two">
         <h2 class="card__title">Games</h2>
         <a href="https://partakefoods.com/" class="card__button"> SHOP NOW </a>
 
@@ -80,7 +84,7 @@
         </a>
       </div>
 
-      <div class="card card--green">
+      <div class="card card--three">
         <h2 class="card__title">Accessories</h2>
         <a href="https://partakefoods.com/" class="card__button"> SHOP NOW </a>
 
