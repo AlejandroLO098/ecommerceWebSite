@@ -18,7 +18,7 @@ header {
   align-items: center;
   z-index: 99;
   box-shadow: 0 0 10px rgb(0, 0, 0);
-  background-color: rgb(36, 47, 62);
+  background-color: rgb(27, 26, 33);
 }
 
 #check {
@@ -99,7 +99,7 @@ header .menu {
     position: fixed;
     top: 6.25rem;
     right: -100%;
-    background: rgba(0, 0, 0, 5);
+    background: rgb(27, 26, 33);
     height: calc(100vh - 6.25rem);
     width: 50%;
     flex-direction: column;

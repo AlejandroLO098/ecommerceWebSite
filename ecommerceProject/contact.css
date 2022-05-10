@@ -42,6 +42,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: aliceblue;
 }
 
 .left {
@@ -74,14 +75,27 @@ h2::after {
 .field {
   width: 100%;
   padding: 0.5rem 1rem;
-  background: rgba(229, 229, 229, 0.6);
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: rgba(229, 229, 229, 0.6);
   font-size: 1rem;
   margin-bottom: 20px;
-  transition: ;
+  transition: 0.3s;
 }
 
+.field:hover {
+  background-color: rgba(114, 114, 114, 0.6);
+}
+
+.field:focus {
+  background-color: aliceblue;
+}
 @media (max-width: 55rem) {
   .contactb {
-    grid-template-columns: ;
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    height: 12.5rem;
   }
 }
